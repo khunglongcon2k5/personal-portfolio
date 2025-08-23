@@ -1,13 +1,4 @@
-import {
-  Instagram,
-  Linkedin,
-  Mail,
-  MapPin,
-  Phone,
-  Send,
-  Twitch,
-  Twitter,
-} from "lucide-react";
+import { Instagram, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
@@ -37,8 +28,10 @@ export const ContactSection = () => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Have a project in mind or want to collaborate? Feel free to reach out.
-          I'm always open to discussing new opportunities.
+          I'm always eager to learn and improve myself. If you have an
+          opportunity, a project, or an idea to collaborate on, I’d be happy to
+          connect and discuss how we can work together. Feel free to reach out.
+          I’d love to hear from you!!!
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -56,10 +49,11 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Email</h4>
                   <a
-                    href="mailto:hello@gmail.com"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=nguyentanhung413@gmail.com"
+                    target="_blank"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    hello@gmail.com
+                    nguyentanhung413@gmail.com
                   </a>
                 </div>
               </div>
@@ -73,7 +67,7 @@ export const ContactSection = () => {
                     href="tel:+11234567890"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +1 (123) 456-7890
+                    +84 815 626 372
                   </a>
                 </div>
               </div>
@@ -84,7 +78,7 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Location</h4>
                   <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Vancouver, BC, Canada
+                    Gia Lai
                   </a>
                 </div>
               </div>
@@ -93,17 +87,14 @@ export const ContactSection = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4"> Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
-                <a href="#" target="_blank">
+                <a
+                  href="https://www.linkedin.com/in/nguyenhung2k5/"
+                  target="_blank"
+                >
                   <Linkedin />
                 </a>
                 <a href="#" target="_blank">
-                  <Twitter />
-                </a>
-                <a href="#" target="_blank">
                   <Instagram />
-                </a>
-                <a href="#" target="_blank">
-                  <Twitch />
                 </a>
               </div>
             </div>
@@ -130,7 +121,7 @@ export const ContactSection = () => {
                   name="name"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="Pedro Machado..."
+                  placeholder="Let me know your name..."
                 />
               </div>
 
@@ -148,7 +139,7 @@ export const ContactSection = () => {
                   name="email"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="john@gmail.com"
+                  placeholder="example@gmail.com"
                 />
               </div>
 
@@ -165,7 +156,7 @@ export const ContactSection = () => {
                   name="message"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary resize-none"
-                  placeholder="Hello, I'd like to talk about..."
+                  placeholder="Hi, I’d like to discuss an opportunity with you..."
                 />
               </div>
 
