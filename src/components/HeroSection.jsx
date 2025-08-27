@@ -16,15 +16,19 @@ export const HeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
-            doloribus ullam corporis earum ducimus et quasi quibusdam, suscipit
-            beatae odio in temporibus voluptas perspiciatis vero nobis laborum,
-            exercitationem officiis nihil?
+            I enjoy exploring technology and turning ideas into something real.
+            Building websites isn't just about coding for me, it's about
+            creating experiences that people can connect with. I'm always
+            curious, always learning, and always improving.
           </p>
+
+          <blockquote className="italic text-muted-foreground text-base md:text-lg max-w-xl mx-auto opacity-0 animate-fade-in-delay-4">
+            “The best way to predict the future is to create it.”
+          </blockquote>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
             <a href="#projects" className="cosmic-button">
-              View My Work
+              Discover My Work
             </a>
           </div>
         </div>
