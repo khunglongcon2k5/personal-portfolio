@@ -3,22 +3,23 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
+    title: "Netflix Clone",
+    description:
+      "A Netflix clone web app built using React, TailwindCSS, and Firebase, featuring movie browsing, authentication, video trailers, and a fully responsive UI.",
     image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
+    tags: ["React", "TailwindCSS", "Firebase"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/khunglongcon2k5/netflix-clone.git",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "Traffic Education",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
+      "An online platform for motorcycle driving theory practice with quizzes and real exam.",
     image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
+    tags: ["HTML / CSS / JS", "PHP", "MySQL", "Laragon"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/khunglongcon2k5/traffic_edu_web.git",
   },
   {
     id: 3,
@@ -62,8 +63,11 @@ export const ProjectsSection = () => {
 
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map((tag) => (
-                    <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
+                  {project.tags.map((tag, key) => (
+                    <span
+                      key={key}
+                      className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground"
+                    >
                       {tag}
                     </span>
                   ))}
